@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Happy+Monkey&family=Inter:wght@400;500;700&family=Rubik:ital,wght@0,400;0,500;0,700;1,500;1,600&family=Shantell+Sans:ital,wght@0,300;0,400;0,700;1,300&display=swap");
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Bebas Neue", sans-serif;
+  background: whitesmoke;
+}
+
+h1 {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 40px;
+  letter-spacing: 5px;
+}
+
+.loader {
+  position: fixed;
+  /* ^This all four need to be set to zero to get background opacity */
+  /* ^Loader is now relative to the body. */
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.loader img {
+  /* ^  loader is  now relative to the body. */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*!Image Container */
+
+.image-container {
+  margin: 10px 30%;
+}
+.image-container img {
+  width: 100%;
+  margin-top: 5px;
+}
+
+/* !Media Query Large SmartPhone */
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .image-container {
+    margin: 10px;
+  }
+}
